@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BA733A8168ACFFA0037E4AE /* NSString+RomajiConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA733A7168ACFFA0037E4AE /* NSString+RomajiConverter.m */; };
+		4BA733AF168AD51D0037E4AE /* NSString+RomajiConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA733AE168AD51D0037E4AE /* NSString+RomajiConverterTests.m */; };
+		4BA733B0168ADB4B0037E4AE /* NSString+RomajiConverter.h in Sources */ = {isa = PBXBuildFile; fileRef = 4BA733A6168ACFFA0037E4AE /* NSString+RomajiConverter.h */; };
+		4BA733B1168ADB4B0037E4AE /* NSString+RomajiConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA733A7168ACFFA0037E4AE /* NSString+RomajiConverter.m */; };
 		4BCEAFD41689E9E300754A88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCEAFD31689E9E300754A88 /* Foundation.framework */; };
-		4BCEAFD91689E9E300754A88 /* RomajiConverter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4BCEAFD81689E9E300754A88 /* RomajiConverter.h */; };
-		4BCEAFDB1689E9E300754A88 /* RomajiConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCEAFDA1689E9E300754A88 /* RomajiConverter.m */; };
 		4BCEAFE31689E9E300754A88 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCEAFE21689E9E300754A88 /* SenTestingKit.framework */; };
 		4BCEAFE51689E9E300754A88 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCEAFE41689E9E300754A88 /* UIKit.framework */; };
 		4BCEAFE61689E9E300754A88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCEAFD31689E9E300754A88 /* Foundation.framework */; };
 		4BCEAFE91689E9E300754A88 /* libRomajiConverter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCEAFD01689E9E300754A88 /* libRomajiConverter.a */; };
 		4BCEAFEF1689E9E300754A88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BCEAFED1689E9E300754A88 /* InfoPlist.strings */; };
-		4BCEAFF21689E9E300754A88 /* RomajiConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCEAFF11689E9E300754A88 /* RomajiConverterTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,25 +36,24 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				4BCEAFD91689E9E300754A88 /* RomajiConverter.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4BA733A6168ACFFA0037E4AE /* NSString+RomajiConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RomajiConverter.h"; sourceTree = "<group>"; };
+		4BA733A7168ACFFA0037E4AE /* NSString+RomajiConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RomajiConverter.m"; sourceTree = "<group>"; };
+		4BA733AD168AD51D0037E4AE /* NSString+RomajiConverterTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RomajiConverterTests.h"; sourceTree = "<group>"; };
+		4BA733AE168AD51D0037E4AE /* NSString+RomajiConverterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RomajiConverterTests.m"; sourceTree = "<group>"; };
 		4BCEAFD01689E9E300754A88 /* libRomajiConverter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRomajiConverter.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BCEAFD31689E9E300754A88 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4BCEAFD71689E9E300754A88 /* RomajiConverter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RomajiConverter-Prefix.pch"; sourceTree = "<group>"; };
-		4BCEAFD81689E9E300754A88 /* RomajiConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RomajiConverter.h; sourceTree = "<group>"; };
-		4BCEAFDA1689E9E300754A88 /* RomajiConverter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RomajiConverter.m; sourceTree = "<group>"; };
 		4BCEAFE11689E9E300754A88 /* RomajiConverterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomajiConverterTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BCEAFE21689E9E300754A88 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		4BCEAFE41689E9E300754A88 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		4BCEAFEC1689E9E300754A88 /* RomajiConverterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RomajiConverterTests-Info.plist"; sourceTree = "<group>"; };
 		4BCEAFEE1689E9E300754A88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4BCEAFF01689E9E300754A88 /* RomajiConverterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RomajiConverterTests.h; sourceTree = "<group>"; };
-		4BCEAFF11689E9E300754A88 /* RomajiConverterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RomajiConverterTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +111,9 @@
 		4BCEAFD51689E9E300754A88 /* RomajiConverter */ = {
 			isa = PBXGroup;
 			children = (
-				4BCEAFD81689E9E300754A88 /* RomajiConverter.h */,
-				4BCEAFDA1689E9E300754A88 /* RomajiConverter.m */,
 				4BCEAFD61689E9E300754A88 /* Supporting Files */,
+				4BA733A6168ACFFA0037E4AE /* NSString+RomajiConverter.h */,
+				4BA733A7168ACFFA0037E4AE /* NSString+RomajiConverter.m */,
 			);
 			path = RomajiConverter;
 			sourceTree = "<group>";
@@ -129,8 +129,8 @@
 		4BCEAFEA1689E9E300754A88 /* RomajiConverterTests */ = {
 			isa = PBXGroup;
 			children = (
-				4BCEAFF01689E9E300754A88 /* RomajiConverterTests.h */,
-				4BCEAFF11689E9E300754A88 /* RomajiConverterTests.m */,
+				4BA733AD168AD51D0037E4AE /* NSString+RomajiConverterTests.h */,
+				4BA733AE168AD51D0037E4AE /* NSString+RomajiConverterTests.m */,
 				4BCEAFEB1689E9E300754A88 /* Supporting Files */,
 			);
 			path = RomajiConverterTests;
@@ -243,7 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BCEAFDB1689E9E300754A88 /* RomajiConverter.m in Sources */,
+				4BA733A8168ACFFA0037E4AE /* NSString+RomajiConverter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +251,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BCEAFF21689E9E300754A88 /* RomajiConverterTests.m in Sources */,
+				4BA733B0168ADB4B0037E4AE /* NSString+RomajiConverter.h in Sources */,
+				4BA733B1168ADB4B0037E4AE /* NSString+RomajiConverter.m in Sources */,
+				4BA733AF168AD51D0037E4AE /* NSString+RomajiConverterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +398,7 @@
 				4BCEAFF71689E9E300754A88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4BCEAFF81689E9E300754A88 /* Build configuration list for PBXNativeTarget "RomajiConverterTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +407,7 @@
 				4BCEAFFA1689E9E300754A88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
