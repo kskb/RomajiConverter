@@ -11,5 +11,6 @@
 @interface NSString (RomajiConverter)
 
 - (NSString*) stringRomajiToHiragana;
+- (NSString*) stringHiraganaToRomaji;
 
 @end

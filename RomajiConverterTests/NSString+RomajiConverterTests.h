@@ -10,9 +10,15 @@
 
 @interface NSString_RomajiConverterTests : SenTestCase
 
+// ひらがなコンバート系
 - (void)testRomajiToHiragana;
 - (void)testHiraganaToHiragana;
 - (void)testZenkakuRomajiToHiragana;
-- (void)testHankakuHiraganaToHiragana;
+- (void)testHankakukanaToHiragana;
+// ローマ字コンバート系
+- (void)testHiraganaToRomaji;
+- (void)testRomajiToRomaji;
+- (void)testZENKAKuRomajiToRomaji;
+- (void)testHankakukanaToRomaji;
 
 @end

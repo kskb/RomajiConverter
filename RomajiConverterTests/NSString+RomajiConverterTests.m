@@ -35,6 +35,9 @@
     [super tearDown];
 }
 
+
+#pragma mark - ローマ字 -> ひらがな変換テスト
+
 - (void)testRomajiToHiragana
 {
     NSString *tmp_oomoji = @"FUKUOKAKEN";
@@ -53,23 +56,53 @@
     //[self fk_assert:[tmp_hiragana stringRomajiToHiragana]];
 }
 
+// 全角ローマ字に対して何もしない
 - (void)testZenkakuRomajiToHiragana
 {
-    NSString *tmp_zenkaku = @"ＦＵＫＵＯＫＡ";
+    NSString *tmp_zenkaku = @"ＦＵＫＵＯＫＡＫＥＮ";
     NSString *result = [tmp_zenkaku stringRomajiToHiragana];
-    STAssertTrue([result isEqualToString:@"ふくおかけん"],
-                 @"result: %@ is not 「ふくおかけん」", result);
+    STAssertTrue([result isEqualToString:@"ＦＵＫＵＯＫＡＫＥＮ"],
+                 @"result: %@ is not 「ＦＵＫＵＯＫＡＫＥＮ」", result);
     //[self fk_assert:[tmp_zenkaku stringRomajiToHiragana]];
     
 }
 
-- (void)testHankakuHiraganaToHiragana
+// 半角カナに対して何もしない
+- (void)testHankakukanaToHiragana
 {
     NSString *tmp_hankakukana = @"ﾌｸｵｶｹﾝ";
     NSString *result = [tmp_hankakukana stringRomajiToHiragana];
-    STAssertTrue([result isEqualToString:@"ふくおかけん"],
-                 @"result: %@ is not 「ふくおかけん」", result);
+    STAssertTrue([result isEqualToString:@"ﾌｸｵｶｹﾝ"],
+                 @"result: %@ is not 「ﾌｸｵｶｹﾝ」", result);
     //[self fk_assert:[tmp_hankakukana stringRomajiToHiragana]];
 }
+
+# pragma mark - ひらがな -> ローマ字変換テスト
+- (void)testHiraganaToRomaji
+{
+    NSString *tmp_hiragana = @"なかまし";
+    NSString *result = [tmp_hiragana stringHiraganaToRomaji];
+    STAssertTrue([result isEqualToString:@"nakamashi"],
+                 @"result: %@ is not 「nakamashi」", result);
+}
+
+- (void)testRomajiToRomaji
+{
+    NSString *tmp_romaji = @"nakamashi";
+    NSString *result = [tmp_romaji stringHiraganaToRomaji];
+    STAssertTrue([result isEqualToString:@"nakamashi"],
+                 @"result: %@ is not 「nakamashi」", result);
+}
+
+- (void)testZENKAKuRomajiToRomaji
+{
+    
+}
+
+- (void)testHankakukanaToRomaji
+{
+    
+}
+
 
 @end
